@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS uicgen CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE uicgen;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE challenges (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  domain VARCHAR(100) NOT NULL,
+  goal TEXT NOT NULL,
+  constraint TEXT,
+  dataset_seed VARCHAR(128),
+  metric VARCHAR(100),
+  signature CHAR(64) NOT NULL, -- sha256 hex
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
