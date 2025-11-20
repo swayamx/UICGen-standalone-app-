@@ -1,0 +1,11 @@
+body{font-family:system-ui,Arial;margin:0;background:#f4f6fb;color:#111}
+header{background:#12233a;color:#fff;padding:12px 18px}
+.container{max-width:900px;margin:22px auto;padding:0 16px}
+.panel{background:#fff;padding:16px;border-radius:8px;margin-bottom:16px;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+label{display:block;margin:8px 0}
+input,select,textarea{width:100%;padding:8px;border:1px solid #ddd;border-radius:6px}
+.row{display:flex;gap:8px;margin-top:12px}
+button, .btn{background:#0b79d0;color:#fff;padding:8px 12px;border:0;border-radius:6px;text-decoration:none}
+.muted{opacity:.85;margin:2px 0 0 0}
+.meta{font-size:13px;color:#666}
+.sig{font-family:monospace;font-size:12px;color:#333;margin-left:8px}
